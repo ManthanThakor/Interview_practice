@@ -9,7 +9,16 @@
     <div>
       <h1>Java Script Interview Practice</h1>
       <button onclick="showMessage()">Click me</button>
+      <button onclick="changeText()">Change Text</button>
+
+      <button id="container" onclick="changeBackgroundColor()">
+        Click me to change background color
+      </button>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js">
+      function changeText() {
+          document.querySelector('h1').textContent = 'Hello, World!';
+        }
+    </script>
   </body>
 </html>
